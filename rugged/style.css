@@ -1,0 +1,460 @@
+
+/* CSS für das Layout */
+@media screen and (min-width: 300px, 1024px){
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0; }
+}
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  display: flex;
+  align-items: center; }
+
+ 
+.header-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 0px; }
+
+.header-icon {
+  margin-right: 20px; 
+}
+
+/* CSS für die Icons */
+
+.header-icon img {
+  width: 34px;
+  height: 34px;
+  vertical-align: middle; }
+  
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28.5rem }
+    
+  
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #f9f9f9;
+  }
+  
+.search-input {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    flex: 1;
+    outline: none;
+    padding: 0;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+
+nav {
+  background-color: #C3C9AB;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  letter-spacing: 1.1px !important;
+}
+
+nav ul li a1 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0 8.8rem;
+}
+nav ul li a2 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0 11.5rem;
+}
+
+nav ul li a3 {
+  color: #2e2e2e;
+  text-decoration: none;
+  padding: 0 6rem;
+}
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navigation li a1 {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation li a1:hover {
+  color: #b4ada8; /* Neue Farbe beim Hovern */
+}
+
+.navigation li a2 {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation li a2:hover {
+  color: #b4ada8; /* Neue Farbe beim Hovern */
+}
+.navigation li a3 {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation li a3:hover {
+  color: #b4ada8; /* Neue Farbe beim Hovern */
+  
+}
+.logo img{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.full-width-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.full-width-image img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-button {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  background-color: #C7B294;
+  color: #2e2e2e;
+  padding: 15px 70px;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+.image-button:hover{
+  background: #ad9c83;
+  color: #2e2e2e;
+}
+
+.image-text {
+  position: absolute;
+  top: 35%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #1f1e1e;
+}
+
+.image-text h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.image-text p {
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Höhe des Viewports */
+  
+}
+
+.rechteck {
+  width: 15000px; /* Breite des Rechtecks */
+  height: 500px; /* Höhe des Rechtecks */
+  background-color: #949e91; /* Hintergrundfarbe des Rechtecks */
+  position: center; /* Positionierung des Rechtecks */
+  left: 0; /* Startposition des Rechtecks */
+  top: 0; /* Startposition des Rechtecks */
+  transition: transform 0.5s ease; /* Übergangseffekt für die Animation */
+  border-radius: 40px;
+  margin: 10px;
+}
+
+.rechteck img {
+  position: absolute;
+  border-radius: 30px;
+  top: 171.6%; /* Obere Position auf 50% des Rechtecks */
+  left: 73.74%; /* Linke Position auf 50% des Rechtecks */
+  transform: translate(-50%, -50%); /* Verschiebung des Bildes um die Hälfte seiner Breite und Höhe */
+  max-width: 100%; /* Maximale Breite des Bildes */
+  max-height:62%; /* Maximale Höhe des Bildes */
+  object-fit: cover; /* Bildgröße anpassen */
+  transition: transform 0.3s ease; /* Übergangseffekt für die Transformation */
+  transform-origin: center center; /* Transformationsursprung auf die Mitte des Bildes setzen */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Schatten beim Hovern */
+}
+
+.bild-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  
+}
+
+a {
+  display: inline-block; /* Optional, um das Element als Block darzustellen */
+}
+
+.rechteck:hover .bild-container {
+  transform: scale(1.02);
+  
+}
+
+h2 {
+  color: #2e2e2e; /* Textfarbe */
+  font-size: 17px; /* Schriftgröße */
+  text-align: center;
+  position: absolute;
+  left: 190px; /* Verschiebung um 20px nach rechts */
+  top: 170%; /* Zentrierung der vertikalen Position */
+  transform: translateY(-50%); /* Zentrierung der vertikalen Position */
+  line-height: 2.5; /* Zeilenabstand auf das 1,5-fache der Schriftgröße setzen */
+}
+
+.button {
+  background-color: #C7B294;
+  color: #2e2e2e;
+  padding: 15px 50px;
+  margin-top: 400px;
+  margin-left: 220px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ad9c83;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+
+.carousel-heading {
+  text-align: center;
+  margin-bottom: 70px;
+  margin-left: 20px; 
+}
+
+.carousel-heading h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-top: 40px;
+}
+
+.carousel-heading::before,
+.carousel-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1045px;
+  width: calc(40% - 25px);
+  height: 1px;
+  background-color: #000;
+}
+
+.carousel-heading::before {
+  left: 0;
+  margin-left: -4%; /* Halbe Breite des Strichs subtrahieren */
+}
+
+.carousel-heading::after {
+  right: 0;
+  margin-right: -5%; /* Halbe Breite des Strichs subtrahieren */
+}
+
+
+.button-container {
+  text-align: center;
+  margin-top: 23px; /* Anpassen des Abstands nach Bedarf */
+  margin-right: 150px;
+}
+
+.centered-button {
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 65px;
+  font-size: 20px;
+  background-color: #C7B294;
+  color: #2e2e2e;
+  border: none;
+  border-radius: 40px;
+}
+
+.centered-button:hover {
+  background: #ad9c83;
+  color: #e6dfdc;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Anpassen der Höhe nach Bedarf */
+  overflow: hidden;
+  margin: 80px;
+  margin-top: 120px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 2s ease-in-out;
+
+}
+
+
+.carousel-inner img {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  margin: 0 20px; 
+}
+
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.carousel-prev {
+  left: 10px;
+  top: 160px;
+  
+}
+
+.carousel-next {
+  right: 10px;
+  top: 160px;
+}
+
+.carousel-container {
+  position: relative;
+  text-align: center;
+}
+
+
+h4 {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+h4::before,
+h4::after {
+  content: "";
+  position: absolute;
+  top: 316.5%;
+  width: calc(35% - 25px);
+  height: 1px;
+  background-color: #000;
+}
+
+h4::before {
+  left: 0;
+}
+
+h4::after {
+  right: 0;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 450px;
+  margin-top: 120px;
+  margin-left: 105px; 
+}
+
+.image-grid img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.additional-image {
+  margin-left: 600px;
+  margin-top: -539px;
+  text-align: center;
+}
+
+.additional-image img {
+  width: 600px; /* Maximale Breite des Bildes */
+  height: 539px; /* Maximale Höhe des Bildes */ 
+}
+
+
+  footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #D9D4D1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 100px;
+  }
+
