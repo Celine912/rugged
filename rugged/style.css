@@ -1,12 +1,12 @@
 
 /* CSS für das Layout */
-@media screen and (min-width: 300px, 1024px){
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0; }
-}
-h1, h2, h3, h4 {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -17,13 +17,15 @@ header {
   color: rgb(0, 0, 0);
   padding: 20px;
   display: flex;
-  align-items: center; }
+  align-items: center; 
+}
 
  
 .header-icons {
   display: flex;
   align-items: center;
-  margin-left: 0px; }
+  margin-left: -20px; 
+}
 
 .header-icon {
   margin-right: 20px; 
@@ -34,13 +36,21 @@ header {
 .header-icon img {
   width: 34px;
   height: 34px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+ }
+
+ .header-icon img:hover {
+  transform: scale(1.2); 
+ }
+
   
 .search-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 28.5rem }
+    padding: 0 28.5rem 
+  }
     
   
 .search-bar {
@@ -63,77 +73,39 @@ header {
     font-size: 14px;
   }
 
-nav {
-  background-color: #C3C9AB;
-  color: #fff;
-  padding: 10px;
+.navigation:hover{
+  color: #FFFFFF;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-  letter-spacing: 1.1px !important;
-}
-
-nav ul li a1 {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  padding: 0 8.8rem;
-}
-nav ul li a2 {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  padding: 0 11.5rem;
-}
-
-nav ul li a3 {
-  color: #2e2e2e;
-  text-decoration: none;
-  padding: 0 6rem;
-}
-.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.navigation li a1 {
-  color: #000000;
-  text-decoration: none;
-}
-
-.navigation li a1:hover {
-  color: #b4ada8; /* Neue Farbe beim Hovern */
-}
-
-.navigation li a2 {
-  color: #000000;
-  text-decoration: none;
-}
-
-.navigation li a2:hover {
-  color: #b4ada8; /* Neue Farbe beim Hovern */
-}
-.navigation li a3 {
-  color: #000000;
-  text-decoration: none;
-}
-
-.navigation li a3:hover {
-  color: #b4ada8; /* Neue Farbe beim Hovern */
+  nav {
+    background-color: #C3C9AB;
+    color: #fff;
+    padding: 10px;
+  }
   
-}
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    margin-right: 3px;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 9.5rem;
+    text-align: center;
+  }
+  
+  nav ul li a:hover {
+    color: #b4ada8;
+  }
+
 .logo img{
   padding: 20px;
   display: flex;
@@ -173,11 +145,13 @@ nav ul li a3 {
   text-decoration: none;
   border-radius: 40px;
   font-size: 20px;
+  transition: background-color 0.3s ease;
 }
 
-.image-button:hover{
+.image-button:hover {
   background: #ad9c83;
   color: #2e2e2e;
+  transform: scale(1.1);
 }
 
 .image-text {
@@ -238,7 +212,8 @@ nav ul li a3 {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
+  z-index: -1;
   
 }
 
@@ -348,10 +323,15 @@ h2 {
 
 .carousel-inner {
   display: flex;
-  transition: transform 2s ease-in-out;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 
 }
 
+.carousel-inner::-webkit-scrollbar {
+  display:none;
+}
 
 .carousel-inner img {
   width: 20%;
@@ -359,7 +339,6 @@ h2 {
   object-fit: cover;
   margin: 0 20px; 
 }
-
 
 .carousel-prev,
 .carousel-next {
@@ -424,7 +403,7 @@ h4::after {
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
   max-width: 450px;
-  margin-top: 120px;
+  margin-top: 150px;
   margin-left: 105px; 
 }
 
@@ -433,6 +412,11 @@ h4::after {
   height: 250px;
   object-fit: cover;
   border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1); /* Vergrößerungsfaktor anpassen */
 }
 
 .additional-image {
@@ -444,17 +428,119 @@ h4::after {
 .additional-image img {
   width: 600px; /* Maximale Breite des Bildes */
   height: 539px; /* Maximale Höhe des Bildes */ 
+  transition: transform 0.3s ease;
 }
 
+.additional-image img:hover {
+  transform: scale(1.1); /* Vergrößerungsfaktor anpassen */
+}
 
   footer {
     bottom: 0;
     left: 0;
+    height: 480px;
     width: 100%;
     background-color: #D9D4D1;
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 220px;
+  }
+
+  .circle {
+    position: absolute;
+    top: 430%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #D9D4D1;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    
+  }
+
+  .circle img {
+    width: 20px; /* Breite des Bildes anpassen */
+    height: 20px; /* Höhe des Bildes anpassen */
+    position: relative;
+    top: -38px; /* Verschiebung des Bildes nach oben anpassen */
+    left: 44px; /* Verschiebung des Bildes nach rechts anpassen */
+  }
+
+  .circle span {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    
+  }
+
+  footer h5 {
+    font-size: 30px; 
+    color: #333; 
+    margin-top: 65px;
+   
+  }
+
+  .heading-container {
+    display: flex;
+  }
+  
+  .heading-container h6 {
+    margin-top: 50px;
+    margin-right: 80px; /* Abstand zwischen den Überschriften anpassen */
+    margin-left: 206px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text-container p {
+    font-family: 'Montserrat', sans-serif;
+    flex: 1;
+    margin-right: 5px; /* Abstand zwischen den Texten anpassen */
+    margin-left: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(105, 105, 105);
+  }
+
+
+  footer .image-container {
+    margin-top: 50px; /* Abstand nach oben anpassen */
+  }
+  
+  footer .image-container img {
+    width: 50px; /* Breite der Bilder anpassen */
+    height: 50px; /* Höhe der Bilder anpassen */
+    margin-right: 15px; /* Abstand zwischen den Bildern anpassen */
+    margin-top: 10px;
+    margin-bottom: 100px;
+    transition: transform 0.3s ease;
+  }
+
+  footer .image-container img:hover {
+    transform: scale(1.2); 
+  }
+  
+
+  footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    padding-bottom: 3px; 
   }
 

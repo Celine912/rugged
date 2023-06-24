@@ -4,13 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>rugged</title>
-  <script src="script.js" defer> </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  
-  
-
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
   <header>
@@ -39,11 +36,11 @@
   </header>
   
   <nav>
-    <ul class="navigation">
-      <li><a1 href="#">Moderne Zylinder</a1></li>
-      <li><a2 href="#">Klassische Zylinder</a2></li>
-      <li><a3 href="#">Ausgefallene Zylinder</a3></li>
-    </ul>
+    <ul>
+      <li><a class="navigation" href="#">Moderne Zylinder</a></li>
+      <li><a class="navigation" href="#">Klassische Zylinder</a></li>
+      <li><a class="navigation" href="#">Ausgefallene Zylinder</a></li>
+    </ul>    
   </nav>
 
   <div class="image-container">
@@ -83,7 +80,8 @@
   <div class="carousel-container">
     <div class="carousel">
       <div class="carousel-inner">
-        <img src="CreamDreamNeu.png" alt="Bild 1">
+
+          <img src="CreamDreamNeu.png" alt="Bild 1">
         
         <img src="EarthHeaven.png" alt="Bild 2">
         
@@ -97,16 +95,20 @@
         <img src="NudePalette.png" alt="Bild 7">
         <img src="CreamDreamNeu.png" alt="Bild 8">
         <img src="EarthHeaven.png" alt="Bild 9">
+
       </div>
-    
-  <div class="button-container">
-    <button class="centered-button">Alle Neuheiten</button>
+
+      <button class="carousel-prev" >&#8249;</button>
+      <button class="carousel-next" >&#8250;</button>
+
+    </div>
+
+    <div class="button-container">
+      <button class="centered-button">Alle Neuheiten</button>
+    </div>
   </div>
-</div>
-    
-    <a class="carousel-prev" href="#" onclick="prevSlide(event)">&#8249;</a>
-  <a class="carousel-next" href="#" onclick="nextSlide(event)">&#8250;</a>
-  </div>
+
+  <script src= "script.js"></script>
 
   <h4>Limited Editions</h4>
   
@@ -123,8 +125,42 @@
 </div>
   
   
-  
-  <footer>
-    <p>© 2023 Meine Webseite. Alle Rechte vorbehalten.</p>
-  </footer>
 </body>
+
+  <footer>
+    <div class="circle">
+      <a href="http://127.0.0.1:5500/rugged/index.html">
+      <img src="upload.png" alt="Bildbeschreibung">
+      </a>
+      <span>rugged</span>
+    </div>
+
+    <h5>Unsere Vorteile</h5>
+
+    <div class="heading-container">
+      <h6>Große Auswahl</h6>
+      <h6>Hohe Qualität</h6>
+      <h6>Nachhaltigkeit</h6>
+    </div>
+
+    <div class="text-container">
+      <p>Entdecken unsere vielfältige Auswahl</p>
+      <p>Qualität, die sich sehen lassen kann</p>
+      <p>Für eine grünere und lebenswerte Zukunft</p>
+    </div>
+  
+    <div class="image-container">
+      <a href="https://www.facebook.com">
+      <img src="facebook.png" alt="Bild 1">
+      </a>
+      <a href="https://www.instagram.com">
+      <img src="insta.png" alt="Bild 2">
+      </a>
+      <a href="https://www.youtube.com">
+      <img src="Youtube.png" alt="Bild 3">
+      </a>
+    </div>
+
+    <p>© 2023 rugged. Alle Rechte vorbehalten.</p>
+  </footer>
+
