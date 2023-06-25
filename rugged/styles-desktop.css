@@ -1,138 +1,182 @@
 
-/* CSS für das Layout */
+@media screen and (min-width: 1024px) {
   body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
   }
+ }
+ 
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-
-header {
+@media screen and (min-width: 1024px) {
+  header {
   font-family: 'Montserrat', sans-serif;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   padding: 20px;
   display: flex;
   align-items: center; 
+  justify-content: space-between;
+  } 
 }
 
- 
+@media screen and (min-width: 1024px) {
 .header-icons {
   display: flex;
   align-items: center;
   margin-left: -20px; 
 }
+}
 
+@media screen and (min-width: 1024px) {
 .header-icon {
   margin-right: 20px; 
 }
+}
 
-/* CSS für die Icons */
-
+@media screen and (min-width: 1024px) {
 .header-icon img {
   width: 34px;
   height: 34px;
   vertical-align: middle;
   transition: transform 0.3s ease;
  }
+}
 
+@media screen and (min-width: 1024px) {
  .header-icon img:hover {
   transform: scale(1.2); 
  }
+}
 
-  
+@media screen and (min-width: 1024px) {
 .search-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 28.5rem 
-  }
+    }
+}
     
-  
+@media screen and (min-width: 1024px) {
 .search-bar {
     display: flex;
     align-items: center;
     height: 30px;
     border: 1px solid #ccc;
     border-radius: 20px;
-    padding: 0 10px;
+    padding: 0 60px;
     background-color: #f9f9f9;
   }
+}
   
+@media screen and (min-width: 1024px) {
 .search-input {
     font-family: 'Montserrat', sans-serif;
     border: none;
     flex: 1;
     outline: none;
-    padding: 0;
+    padding: 0 40px;
     margin-left: 5px;
     font-size: 14px;
+    background-color: #f9f9f9;
+    
   }
-
-.navigation:hover{
-  color: #FFFFFF;
 }
 
+@media screen and (min-width: 1024px) {
+.navigation {
+   margin-right: 2.7px;
+   text-align: center;
+}
+}
+
+
+.navigation:hover{
+  color: #e7e4e1;
+}
+
+@media screen and (min-width: 1024px) {
   nav {
     background-color: #C3C9AB;
-    color: #fff;
+    color: #b4ada8;
     padding: 10px;
   }
+}
   
+@media screen and (min-width: 1024px) {
   nav ul {
     margin: 0;
     padding: 0;
   }
+}
   
+@media screen and (min-width: 1024px) {
   nav ul li {
     font-family: 'Montserrat', sans-serif;
     display: inline;
     margin-right: 3px;
     text-align: center;
   }
+}
   
+@media screen and (min-width: 1024px) {
   nav ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 0 9.5rem;
     text-align: center;
+    font-size: 15px;
   }
+}
   
   nav ul li a:hover {
     color: #b4ada8;
+    text-decoration: none;
   }
 
+  @media screen and (min-width: 1024px) {
 .logo img{
   padding: 20px;
   display: flex;
   align-items: center;
 }
+}
 
+@media screen and (min-width: 1024px){
 .full-width-image {
   width: 100%;
   overflow: hidden;
+  }
 }
 
+@media screen and (min-width: 1024px) {
 .full-width-image img {
   width: 100%;
   height: auto;
+  }
 }
 
+
+@media screen and (min-width: 1024px) {
 .image-container {
   position: relative;
   width: 100%;
   overflow: hidden;
+  }
 }
 
+@media screen and (min-width: 1024px) {
 .image-container img {
   width: 100%;
   height: auto;
+  }
 }
 
+@media screen and (min-width: 1024px) {
 .image-button {
   font-family: 'Montserrat', sans-serif;
   position: absolute;
@@ -145,15 +189,16 @@ header {
   text-decoration: none;
   border-radius: 40px;
   font-size: 20px;
-  transition: background-color 0.3s ease;
+}
 }
 
 .image-button:hover {
   background: #ad9c83;
   color: #2e2e2e;
-  transform: scale(1.1);
+  text-decoration: none;
 }
 
+@media screen and (min-width: 1024px) {
 .image-text {
   position: absolute;
   top: 35%;
@@ -162,24 +207,31 @@ header {
   text-align: left;
   color: #1f1e1e;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .image-text h1 {
   font-size: 50px;
   margin-bottom: 10px;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .image-text p {
   font-size: 25px;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Höhe des Viewports */
-  
+}
 }
 
+@media screen and (min-width: 1024px) {
 .rechteck {
   width: 15000px; /* Breite des Rechtecks */
   height: 500px; /* Höhe des Rechtecks */
@@ -191,52 +243,36 @@ header {
   border-radius: 40px;
   margin: 10px;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .rechteck img {
   position: absolute;
   border-radius: 30px;
-  top: 171.6%; /* Obere Position auf 50% des Rechtecks */
+  top: 168.5%; /* Obere Position auf 50% des Rechtecks */
   left: 73.74%; /* Linke Position auf 50% des Rechtecks */
   transform: translate(-50%, -50%); /* Verschiebung des Bildes um die Hälfte seiner Breite und Höhe */
   max-width: 100%; /* Maximale Breite des Bildes */
-  max-height:62%; /* Maximale Höhe des Bildes */
+  max-height:61%; /* Maximale Höhe des Bildes */
   object-fit: cover; /* Bildgröße anpassen */
-  transition: transform 0.3s ease; /* Übergangseffekt für die Transformation */
-  transform-origin: center center; /* Transformationsursprung auf die Mitte des Bildes setzen */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Schatten beim Hovern */
 }
-
-.bild-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s ease;
-  z-index: -1;
-  
 }
 
-a {
-  display: inline-block; /* Optional, um das Element als Block darzustellen */
-}
-
-.rechteck:hover .bild-container {
-  transform: scale(1.02);
-  
-}
-
+@media screen and (min-width: 1024px) {
 h2 {
   color: #2e2e2e; /* Textfarbe */
   font-size: 17px; /* Schriftgröße */
   text-align: center;
   position: absolute;
   left: 190px; /* Verschiebung um 20px nach rechts */
-  top: 170%; /* Zentrierung der vertikalen Position */
+  top: 165%; /* Zentrierung der vertikalen Position */
   transform: translateY(-50%); /* Zentrierung der vertikalen Position */
   line-height: 2.5; /* Zeilenabstand auf das 1,5-fache der Schriftgröße setzen */
 }
+}
 
+@media screen and (min-width: 1024px) {
 .button {
   background-color: #C7B294;
   color: #2e2e2e;
@@ -249,54 +285,66 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .button:hover {
   background-color: #ad9c83;
   color: #e0e0e0;
   cursor: pointer;
 }
+}
 
-
+@media screen and (min-width: 1024px) {
 .carousel-heading {
   text-align: center;
   margin-bottom: 70px;
   margin-left: 20px; 
 }
+}
 
+@media screen and (min-width: 1024px) {
 .carousel-heading h3 {
   text-align: center;
   font-size: 28px;
   color: #333;
   margin-top: 40px;
 }
+}
 
-.carousel-heading::before,
-.carousel-heading::after {
+@media screen and (min-width: 1024px) {
+h3::before,
+h3::after {
   content: "";
   position: absolute;
-  bottom: -1045px;
-  width: calc(40% - 25px);
+  top: 225%;
+  width: calc(35% - 25px);
   height: 1px;
   background-color: #000;
 }
+}
 
-.carousel-heading::before {
+@media screen and (min-width: 1024px) {
+h3::before {
   left: 0;
-  margin-left: -4%; /* Halbe Breite des Strichs subtrahieren */
+}
 }
 
-.carousel-heading::after {
+@media screen and (min-width: 1024px) {
+h3::after {
   right: 0;
-  margin-right: -5%; /* Halbe Breite des Strichs subtrahieren */
+}
 }
 
-
+@media screen and (min-width: 1024px) {
 .button-container {
   text-align: center;
-  margin-top: 23px; /* Anpassen des Abstands nach Bedarf */
-  margin-right: 150px;
+  margin-top: 23px; 
+  margin-left: 15px;
+}
 }
 
+@media screen and (min-width: 1024px) {
 .centered-button {
   font-family: 'Montserrat', sans-serif;
   padding: 10px 65px;
@@ -306,40 +354,49 @@ h2 {
   border: none;
   border-radius: 40px;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .centered-button:hover {
   background: #ad9c83;
   color: #e6dfdc;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .carousel {
   position: relative;
   width: 100%;
-  height: 400px; /* Anpassen der Höhe nach Bedarf */
+  height: 400px; 
   overflow: hidden;
-  margin: 80px;
-  margin-top: 120px;
+} 
 }
 
+@media screen and (min-width: 1024px) {
 .carousel-inner {
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-
+  }
 }
 
+@media screen and (min-width: 1024px) {
 .carousel-inner::-webkit-scrollbar {
   display:none;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .carousel-inner img {
   width: 20%;
   height: 20%;
   object-fit: cover;
   margin: 0 20px; 
 }
+}
 
+@media screen and (min-width: 1024px) {
 .carousel-prev,
 .carousel-next {
   position: absolute;
@@ -347,56 +404,72 @@ h2 {
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(12, 12, 12);
   text-align: center;
   line-height: 40px;
   font-size: 24px;
   text-decoration: none;
+  border: none;
+  outline: none;
+}
 }
 
+@media screen and (min-width: 1024px) {
 .carousel-prev {
   left: 10px;
   top: 160px;
-  
+}
 }
 
+@media screen and (min-width: 1024px) {
 .carousel-next {
   right: 10px;
   top: 160px;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .carousel-container {
   position: relative;
   text-align: center;
 }
+}
 
-
+@media screen and (min-width: 1024px) {
 h4 {
   text-align: center;
   margin-top: 150px;
   margin-bottom: 10px;
   font-size: 28px;
 }
+}
 
+@media screen and (min-width: 1024px) {
 h4::before,
 h4::after {
   content: "";
   position: absolute;
-  top: 316.5%;
+  top: 314%;
   width: calc(35% - 25px);
   height: 1px;
   background-color: #000;
 }
+}
 
+@media screen and (min-width: 1024px) {
 h4::before {
   left: 0;
 }
+}
 
+@media screen and (min-width: 1024px) {
 h4::after {
   right: 0;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -406,7 +479,9 @@ h4::after {
   margin-top: 150px;
   margin-left: 105px; 
 }
+}
 
+@media screen and (min-width: 1024px) {
 .image-grid img {
   width: 250px;
   height: 250px;
@@ -414,27 +489,37 @@ h4::after {
   border-radius: 20px;
   transition: transform 0.3s ease;
 }
-
-.image-grid img:hover {
-  transform: scale(1.1); /* Vergrößerungsfaktor anpassen */
 }
 
+@media screen and (min-width: 1024px) {
+.image-grid img:hover {
+  transform: scale(1.1); 
+}
+}
+
+@media screen and (min-width: 1024px) {
 .additional-image {
   margin-left: 600px;
   margin-top: -539px;
   text-align: center;
 }
+}
 
+@media screen and (min-width: 1024px) {
 .additional-image img {
   width: 600px; /* Maximale Breite des Bildes */
   height: 539px; /* Maximale Höhe des Bildes */ 
   transition: transform 0.3s ease;
 }
-
-.additional-image img:hover {
-  transform: scale(1.1); /* Vergrößerungsfaktor anpassen */
 }
 
+@media screen and (min-width: 1024px) {
+.additional-image img:hover {
+  transform: scale(1.1); /* Vergrößerungsfaktor anpassen */
+  }
+}
+
+@media screen and (min-width: 1024px) {
   footer {
     bottom: 0;
     left: 0;
@@ -446,10 +531,12 @@ h4::after {
     text-align: center;
     margin-top: 220px;
   }
+}
 
+@media screen and (min-width: 1024px) {
   .circle {
     position: absolute;
-    top: 430%;
+    top: 426%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 110px;
@@ -459,9 +546,10 @@ h4::after {
     display: flex;
    justify-content: center;
    align-items: center;
-    
   }
+}
 
+  @media screen and (min-width: 1024px) {
   .circle img {
     width: 20px; /* Breite des Bildes anpassen */
     height: 20px; /* Höhe des Bildes anpassen */
@@ -469,7 +557,9 @@ h4::after {
     top: -38px; /* Verschiebung des Bildes nach oben anpassen */
     left: 44px; /* Verschiebung des Bildes nach rechts anpassen */
   }
+}
 
+@media screen and (min-width: 1024px) {
   .circle span {
     font-family: 'Montserrat', sans-serif;
     color: #000000;
@@ -477,20 +567,24 @@ h4::after {
     font-weight: bold;
     padding-bottom: 0px;
     padding-right: 20px;
-    
+  }
   }
 
+  @media screen and (min-width: 1024px) {
   footer h5 {
     font-size: 30px; 
     color: #333; 
     margin-top: 65px;
-   
+  }
   }
 
+  @media screen and (min-width: 1024px) {
   .heading-container {
     display: flex;
   }
+}
   
+@media screen and (min-width: 1024px) {
   .heading-container h6 {
     margin-top: 50px;
     margin-right: 80px; /* Abstand zwischen den Überschriften anpassen */
@@ -501,13 +595,17 @@ h4::after {
     font-weight: bold;
     text-align: center;
   }
+}
 
+@media screen and (min-width: 1024px) {
   .text-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+}
   
+@media screen and (min-width: 1024px) {
   .text-container p {
     font-family: 'Montserrat', sans-serif;
     flex: 1;
@@ -517,30 +615,32 @@ h4::after {
     font-size: 16px;
     color: rgb(105, 105, 105);
   }
+}
 
-
+@media screen and (min-width: 1024px) {
   footer .image-container {
     margin-top: 50px; /* Abstand nach oben anpassen */
   }
+}
   
+@media screen and (min-width: 1024px) {
   footer .image-container img {
-    width: 50px; /* Breite der Bilder anpassen */
-    height: 50px; /* Höhe der Bilder anpassen */
+    width: 45px; /* Breite der Bilder anpassen */
+    height: 45px; /* Höhe der Bilder anpassen */
     margin-right: 15px; /* Abstand zwischen den Bildern anpassen */
     margin-top: 10px;
     margin-bottom: 100px;
     transition: transform 0.3s ease;
   }
+}
 
+@media screen and (min-width: 1024px) {
   footer .image-container img:hover {
     transform: scale(1.2); 
   }
+}
+
+
   
 
-  footer p {
-    text-align: center;
-    font-size: 14px;
-    color: #999999;
-    padding-bottom: 3px; 
-  }
-
+  

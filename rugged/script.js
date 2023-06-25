@@ -1,23 +1,15 @@
-
-
 /*Carousel*/ 
+const carouselContainer = document.querySelector('.carousel-container');
+const carouselInner = document.querySelector('.carousel-inner');
+const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel-next');
 
+let containerWidth = carouselContainer.offsetWidth;
 
+nextButton.addEventListener('click', () => {
+  carouselInner.scrollLeft += containerWidth;
+});
 
-const productContainers = [...document.querySelectorAll('.product-container')];
-const prevButton = [...document.querySelectorAll('.carousel-prev')];
-const nextButton = [...document.querySelectorAll('.carousel-next')];
-
-productContainers.forEach((item, i) => {
-  let containerDimensions = item.getBoundingClientRect();
-  let containerWidth = containerDimensions.width;
-
-  nextButton[i].addEventListener('click', () => {
-      item.scrollLeft += containerWidth;
-  });
-
-  prevButton[i].addEventListener('click', () => {
-      item.scrollLeft -= containerWidth;
-  });
-
+prevButton.addEventListener('click', () => {
+  carouselInner.scrollLeft -= containerWidth;
 });
